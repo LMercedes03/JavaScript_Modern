@@ -7,11 +7,11 @@
 //
 
 const displayResults = (personList, count) => {
-    count = 0;
-    count = personList.length;
-    console.table(personList);
-    console.log("There are " + count + " people in the list.");
-}
+  count = 0;
+  count = personList.length;
+  console.table(personList);
+  console.log("There are " + count + " people in the list.");
+};
 
 const getData = (tableName) => {
   let retval = "No Data";
@@ -23,13 +23,16 @@ const getData = (tableName) => {
     ];
   }
   return retval;
-}
+};
 
 const main = () => {
-  let table = "person";
+  const table = "person";
   let personList = getData(table);
-  personList.sort(function(a,b){return a.age - b.age});
+  personList.sort(function (a, b) {
+    return a.age - b.age;
+  });
   displayResults(personList);
-}
+};
 
 main();
+

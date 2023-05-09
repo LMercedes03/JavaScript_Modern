@@ -3,25 +3,39 @@
 // Date: 5/24/2022
 // 
 
-//Ex 1
-const countNumbers = (array) => {
-    let count = 0;
+// //Ex 1
+// const countNumbers = (array) => {
+//     let count = 0;
 
-    for (let i = 0; i < array.length; i++){
-        if (typeof array[i] == 'number'){ 
-        count++; 
+//     for (let i = 0; i < array.length; i++){
+//         if (typeof array[i] == 'number'){ 
+//         count++; 
+//         }
+//     }
+
+//     return count;
+// };
+
+//Use case for ex1
+// const array = [1, '2', 3, 'test', 1.2];
+// console.log(countNumbers(array));
+
+//Ex 2
+const minNumber = (array) => {
+    let min = array[0];
+
+    for (let i = 1; i < array.length; i++){
+        if (array[i] < min){
+            min = array[i];
         }
     }
-
-    return count;
+    return min;
 };
 
-const array = [1, '2', 3, 'test', 1.2];
-console.log(countNumbers(array));
+//Use case for ex2
+const array = [12, 55, 2, 22, 11];
+console.log(minNumber(array));
 
-// const ex2 = () => {
-//     // TODO...
-// }
 
 // const ex3 = () => {
 //     // TODO...

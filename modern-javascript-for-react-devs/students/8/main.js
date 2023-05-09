@@ -3,7 +3,7 @@
 // Date: 5/24/2022
 // 
 
-//EX 1
+//Ex 1
 const countNumbers = (array) => {
     let count = 0;
 

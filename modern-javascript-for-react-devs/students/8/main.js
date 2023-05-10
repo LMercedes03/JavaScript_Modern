@@ -20,21 +20,21 @@
 // const array = [1, '2', 3, 'test', 1.2];
 // console.log(countNumbers(array));
 
-//Ex 2
-const minNumber = (array) => {
-    let min = array[0];
+// //Ex 2
+// const minNumber = (array) => {
+//     let min = array[0];
 
-    for (let i = 1; i < array.length; i++){
-        if (array[i] < min){
-            min = array[i];
-        }
-    }
-    return min;
-};
+//     for (let i = 1; i < array.length; i++){
+//         if (array[i] < min){
+//             min = array[i];
+//         }
+//     }
+//     return min;
+// };
 
-//Use case for ex2
-const array = [12, 55, 2, 22, 11];
-console.log(minNumber(array));
+// //Use case for ex2
+// const array = [12, 55, 2, 22, 11];
+// console.log(minNumber(array));
 
 // //Ex 3
 // const interleave = (array1, array2) => {
@@ -63,19 +63,17 @@ console.log(minNumber(array));
 
 
 //Ex 4
-const palindrome = (string) =>{
-    
-    const length = Math.floor(string.length/2);
-    
-    for (let i = 0; i < length; i++){
-        if (string[i] !== string[string.length - i - 1])
-            return false;
-        }
-
-    return true;      
-    
+const palindrome = (str) => {
+    const length = str.length;
+    for (let i = 0; i < Math.floor(length / 2); i++) {
+      if (str[i] !== str[length - 1 - i]) {
+        return false;
+      }
     }
-//Use cases for ex 4
+    return true;
+  };
+
+//Case use for ex4
 console.log(palindrome('radar'));
 console.log(palindrome('month'));
 

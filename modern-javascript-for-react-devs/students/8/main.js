@@ -57,25 +57,41 @@
 // console.log(interleave(array1, array2));
 
 // //Use case 2 for ex3 (testing mismatch error message)
-// const array1 = [1, 2, 3, 4, 5];
+// const array1 = [1, 2, 5];
 // const array2 = ['a', 'b', 'c', 'd', 'e'];
 // console.log(interleave(array1, array2));
 
 
-//Ex 4
-const palindrome = (str) => {
-    const length = str.length;
-    for (let i = 0; i < Math.floor(length / 2); i++) {
-      if (str[i] !== str[length - 1 - i]) {
-        return false;
-      }
-    }
-    return true;
-  };
+// //Ex 4
+// const palindrome = (str) => {
+//     const length = str.length;
+//     for (let i = 0; i < Math.floor(length / 2); i++) {
+//       if (str[i] !== str[length - 1 - i]) {
+//         return false;
+//       }
+//     }
+//     return true;
+//   };
 
-//Case use for ex4
-console.log(palindrome('radar'));
-console.log(palindrome('month'));
+// //Case use for ex4
+// console.log(palindrome('radar'));
+// console.log(palindrome('month'));
+
+//Ex5
+let str = "today this is a this is a this is a test.";
+let keyword = "this";
+let count = 0;
+
+const words = str.split(" ");
+
+for (let i = 0; i < words.length; i++){
+    if (words[i] === keyword){
+        count++;
+    }
+}
+
+console.log(`${keyword} appears: ${count} times.`);
+
 
 // //
 // // Your functions here...

@@ -36,6 +36,25 @@ const minNumber = (array) => {
 const array = [12, 55, 2, 22, 11];
 console.log(minNumber(array));
 
+//Ex 3
+const interleave = (array1, array2) => {
+    if (array1.length !== array2.length) {
+      return 'ERROR: Array length mismatch';
+    }
+    
+    let result = '';
+    
+    for (let i = 0; i < array1.length; i++) {
+      result += array1[i] + array2[i];
+    }
+    
+    return result;
+  };
+
+//Use case for ex3
+const array1 = [1, 2, 3, 4, 5];
+const array2 = ['a', 'b', 'c', 'd', 'e'];
+console.log(interleave(array1, array2));
 
 // const ex3 = () => {
 //     // TODO...

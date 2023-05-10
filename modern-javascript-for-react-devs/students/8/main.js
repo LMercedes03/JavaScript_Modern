@@ -75,13 +75,9 @@ const palindrome = (string) =>{
     return true;      
     
     }
-
-
-    console.log(palindrome('radar'));
-    console.log(palindrome('month'));
-
-
-
+//Use cases for ex 4
+console.log(palindrome('radar'));
+console.log(palindrome('month'));
 
 // //
 // // Your functions here...

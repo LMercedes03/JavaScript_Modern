@@ -77,20 +77,38 @@
 // console.log(palindrome('radar'));
 // console.log(palindrome('month'));
 
-//Ex5
-let str = "today this is a this is a this is a test.";
-let keyword = "this";
-let count = 0;
+// //Ex5
+// let str = "today this is a this is a this is a test.";
+// let keyword = "this";
+// let count = 0;
 
-const words = str.split(" ");
+// const words = str.split(" ");
 
-for (let i = 0; i < words.length; i++){
-    if (words[i] === keyword){
-        count++;
+// for (let i = 0; i < words.length; i++){
+//     if (words[i] === keyword){
+//         count++;
+//     }
+// }
+
+// console.log(`${keyword} appears: ${count} times.`);
+
+//Ex6
+const longestString = (array) => {
+    let longest = array[0];
+
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].length > longest.length) {
+            longest = array[i];
+        }
     }
-}
+    return longest;
+};
 
-console.log(`${keyword} appears: ${count} times.`);
+//Use case for ex6
+const array = ['this', 'is', 'a', 'test', 'happy'];
+console.log(longestString(array));
+
+
 
 
 // //

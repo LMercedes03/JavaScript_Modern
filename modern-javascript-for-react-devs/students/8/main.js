@@ -3,7 +3,7 @@
 // Date: 5/24/2022
 // 
 
-// //Ex 1
+// //EXERCISE 1
 // const countNumbers = (array) => {
 //     let count = 0;
 
@@ -16,11 +16,12 @@
 //     return count;
 // };
 
-//Use case for ex1
+//USE CASE FOR EXERCISE 1
 // const array = [1, '2', 3, 'test', 1.2];
 // console.log(countNumbers(array));
 
-// //Ex 2
+
+// //EXERCISE 2
 // const minNumber = (array) => {
 //     let min = array[0];
 
@@ -32,11 +33,12 @@
 //     return min;
 // };
 
-// //Use case for ex2
+// //USE CASE FOR EXERCISE 2
 // const array = [12, 55, 2, 22, 11];
 // console.log(minNumber(array));
 
-// //Ex 3
+
+//EXERCISE 3
 // const interleave = (array1, array2) => {
 //     if (array1.length !== array2.length) {
 //       return 'ERROR: Array length mismatch';
@@ -51,33 +53,37 @@
 //     return result;
 //   };
 
-// //Use case 1 for ex3
+// //USE CASE 1 FOR EXERCISE 3
 // const array1 = [1, 2, 3, 4, 5];
 // const array2 = ['a', 'b', 'c', 'd', 'e'];
 // console.log(interleave(array1, array2));
 
-// //Use case 2 for ex3 (testing mismatch error message)
+// //USE CASE 2 FOR EXERCISE 3 (testing mismatch error message)
 // const array1 = [1, 2, 5];
 // const array2 = ['a', 'b', 'c', 'd', 'e'];
 // console.log(interleave(array1, array2));
 
 
-// //Ex 4
+// //EXERCISE 4
 // const palindrome = (str) => {
 //     const length = str.length;
+   
 //     for (let i = 0; i < Math.floor(length / 2); i++) {
-//       if (str[i] !== str[length - 1 - i]) {
+      
+//         if (str[i] !== str[length - 1 - i]) {
 //         return false;
 //       }
 //     }
 //     return true;
+    
 //   };
 
-// //Case use for ex4
+// //USE CASE FOR EXERCISE 4
 // console.log(palindrome('radar'));
 // console.log(palindrome('month'));
 
-// //Ex5
+
+// //EXERCISE 5
 // let str = "today this is a this is a this is a test.";
 // let keyword = "this";
 // let count = 0;
@@ -92,37 +98,41 @@
 
 // console.log(`${keyword} appears: ${count} times.`);
 
-//Ex6
-const longestString = (array) => {
-    let longest = array[0];
 
-    for (let i = 0; i < array.length; i++) {
-        if (array[i].length > longest.length) {
-            longest = array[i];
-        }
-    }
-    return longest;
-};
+// //EXERCISE 6
+// const longestString = (array) => {
+//     let longest = array[0];
 
-//Use case for ex6
-const array = ['this', 'is', 'a', 'test', 'happy'];
-console.log(longestString(array));
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i].length > longest.length) {
+//             longest = array[i];
+//         }
+//     }
+//     return longest;
+// };
+
+// //USE CASE FOR EXERCISE 6
+// const array = ['this', 'is', 'a', 'test', 'happy'];
+// console.log(longestString(array));
 
 
+// //EXERCISE 7
+// //This function subtracts b from a, which results in ascending order. 
+// //If the result is negative, a is considered smaller and comes before b 
+// //in the sorted array. If the result is positive, a is considered greater 
+// //and comes after b. If the result is zero, the order remains unchanged.
+
+// const sort = (array) =>{
+//     return array.sort((a, b) => a - b); 
+// };
+
+// //Use case for ex 7
+// let n = [3, 5, 2, 8, 6, 10];
+// console.log(sort(n));
 
 
-// //
-// // Your functions here...
-// //
+// //EXERCISE 8
 
-// const countNumbers = (array) => {
-//     let retval = 0;
-//     // TODO...
-//     return retval;
+// const countWords = (string) => {
+//     const words = str.split(" ");
 // }
-
-// const main = async () => {
-//     ex1();
-// }
-
-// main();

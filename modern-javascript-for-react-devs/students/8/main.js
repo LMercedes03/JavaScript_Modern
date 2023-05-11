@@ -36,7 +36,7 @@
 // const array = [12, 55, 2, 22, 11];
 // console.log(minNumber(array));
 
-// //Ex 3
+//Ex 3
 // const interleave = (array1, array2) => {
 //     if (array1.length !== array2.length) {
 //       return 'ERROR: Array length mismatch';
@@ -62,20 +62,20 @@
 // console.log(interleave(array1, array2));
 
 
-// //Ex 4
-// const palindrome = (str) => {
-//     const length = str.length;
-//     for (let i = 0; i < Math.floor(length / 2); i++) {
-//       if (str[i] !== str[length - 1 - i]) {
-//         return false;
-//       }
-//     }
-//     return true;
-//   };
+//Ex 4
+const palindrome = (str) => {
+    const length = str.length;
+    for (let i = 0; i < Math.floor(length / 2); i++) {
+      if (str[i] !== str[length - 1 - i]) {
+        return false;
+      }
+    }
+    return true;
+  };
 
-// //Case use for ex4
-// console.log(palindrome('radar'));
-// console.log(palindrome('month'));
+//Case use for ex4
+console.log(palindrome('radar'));
+console.log(palindrome('month'));
 
 // //Ex5
 // let str = "today this is a this is a this is a test.";
@@ -92,37 +92,23 @@
 
 // console.log(`${keyword} appears: ${count} times.`);
 
-//Ex6
-const longestString = (array) => {
-    let longest = array[0];
+// //Ex6
+// const longestString = (array) => {
+//     let longest = array[0];
 
-    for (let i = 0; i < array.length; i++) {
-        if (array[i].length > longest.length) {
-            longest = array[i];
-        }
-    }
-    return longest;
-};
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i].length > longest.length) {
+//             longest = array[i];
+//         }
+//     }
+//     return longest;
+// };
 
-//Use case for ex6
-const array = ['this', 'is', 'a', 'test', 'happy'];
-console.log(longestString(array));
+// //Use case for ex6
+// const array = ['this', 'is', 'a', 'test', 'happy'];
+// console.log(longestString(array));
 
-
-
-
-// //
-// // Your functions here...
-// //
-
-// const countNumbers = (array) => {
-//     let retval = 0;
-//     // TODO...
-//     return retval;
-// }
-
-// const main = async () => {
-//     ex1();
-// }
-
-// main();
+//Ex7
+const sort = (array) =>{
+    
+}
